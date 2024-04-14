@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://s3.ap-south-1.amazonaws.com/employroll.com/images/1712426069953.jpeg');
+    }
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        background-image: url('C:\Users\Hp\Downloads\gym.jpeg');
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+        </style>
+<h2 style="text-align: center; background-color: aquamarine;">Signup</h2>
+<form action="signup.php" method="POST">
+    <label for="signup_name">Name</label>
+    <input type="text" id="signup_name" name="signup_name" required>
+    
+    <label for="signup_email">Email</label>
+    <input type="email" id="signup_email" name="signup_email" required>
+    
+    <label for="signup_password">Password</label>
+    <input type="password" id="signup_password" name="signup_password" required>
+    
+    <input type="submit" value="Signup">
+</form>
+    </head>
+    
+   
+</html>

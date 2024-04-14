@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS lgymdb;
+USE lgymdb;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTOINCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOTNULL,
+    email varchar(50) NOTNULL UNIQUE,
+    password VARCHAR(100) NOTNULL
+);
